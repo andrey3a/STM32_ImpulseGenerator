@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"impulse_generator\startup_stm32l151xb.o"
+"impulse_generator\main.o"
+"impulse_generator\stm32l1xx_it.o"
+"impulse_generator\stm32l1xx_hal_msp.o"
+"impulse_generator\stm32l1xx_hal_tim.o"
+"impulse_generator\stm32l1xx_hal_tim_ex.o"
+"impulse_generator\stm32l1xx_hal_uart.o"
+"impulse_generator\stm32l1xx_hal.o"
+"impulse_generator\stm32l1xx_hal_rcc.o"
+"impulse_generator\stm32l1xx_hal_rcc_ex.o"
+"impulse_generator\stm32l1xx_hal_flash.o"
+"impulse_generator\stm32l1xx_hal_flash_ex.o"
+"impulse_generator\stm32l1xx_hal_flash_ramfunc.o"
+"impulse_generator\stm32l1xx_hal_gpio.o"
+"impulse_generator\stm32l1xx_hal_dma.o"
+"impulse_generator\stm32l1xx_hal_pwr.o"
+"impulse_generator\stm32l1xx_hal_pwr_ex.o"
+"impulse_generator\stm32l1xx_hal_cortex.o"
+"impulse_generator\system_stm32l1xx.o"
+--library_type=microlib --strict --scatter "impulse_generator\impulse_generator.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "impulse_generator.map" -o impulse_generator\impulse_generator.axf
